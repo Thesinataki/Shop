@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت Shadow Snacks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>پنل مدیریت</h1>
+    </header>
+    <section>
+        <input type="password" id="admin-pass" placeholder="پسورد (test123)">
+        <button id="login-btn">ورود</button>
+        <div id="admin-panel" style="display:none;">
+            <h2>مدیریت محصولات</h2>
+            <form id="product-form">
+                <input type="text" id="prod-name" placeholder="نام محصول" required>
+                <input type="number" id="prod-price" placeholder="قیمت (تومان)" required>
+                <textarea id="prod-desc" placeholder="توضیح" required></textarea>
+                <input type="text" id="prod-img" placeholder="لینک عکس (placeholder)" required>
+                <button type="submit" class="btn">اضافه/ویرایش</button>
+            </form>
+            <div id="admin-products"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
