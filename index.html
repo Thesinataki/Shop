@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Snacks - خوراکی‌های کمیاب و جادویی</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg width="100" height="50" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="35" font-family="'Press Start 2P', cursive" font-size="12" fill="#8B0000" stroke="#B8860B" stroke-width="1">Shadow Snacks</text>
+                <circle cx="90" cy="25" r="5" fill="#4B0082" class="glow"/>
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#shop">فروشگاه</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#contact">تماس</a></li>
+                <li><a href="#" id="cart-btn">سبد خرید (0)</a></li>
+                <li><a href="admin.html">مدیریت</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <canvas id="particles"></canvas>
+        <h1>به دنیای خوراکی‌های سایه‌دار خوش آمدید!</h1>
+        <p>کشف کنید طعم‌های عجیب از اعماق تاریکی...</p>
+        <a href="#shop" class="btn">شروع خرید</a>
+    </section>
+
+    <section id="shop">
+        <h2>محصولات جادویی</h2>
+        <div class="products-grid"></div>
+    </section>
+
+    <section id="about">
+        <h2>درباره Shadow Snacks</h2>
+        <p>ما متخصص خوراکی‌های کمیاب هستیم – از شکلات‌های اژدها تا چیپس‌های شبح‌وار. با تم فانتزی و گیمینگ، خرید رو به ماجراجویی تبدیل کردیم!</p>
+    </section>
+
+    <section id="contact">
+        <h2>تماس با ما</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="نام" required>
+            <input type="email" placeholder="ایمیل" required>
+            <textarea placeholder="پیام" required></textarea>
+            <button type="submit" class="btn">ارسال</button>
+        </form>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>سبد خرید</h2>
+            <div id="cart-items"></div>
+            <p id="total">مجموع: 0 تومان</p>
+            <button id="checkout" class="btn">پرداخت</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
